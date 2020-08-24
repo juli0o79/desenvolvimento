@@ -1,0 +1,255 @@
+body, html{
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+#projetos {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    display: block;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 120px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+}
+#presentation p {
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-bottom: 0px;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+#legend {
+
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-top: 0px;
+
+
+}
+nav {
+    width: 100%;
+}
+ul {
+    width: 100%;
+    }
+ul a {
+    text-decoration: none;
+    color: grey;
+} 
+ul a:hover {
+    color: red;
+    font-size: 18px;
+}   
+li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#nome {
+  
+   margin-left: 27%;
+   white-space: nowrap;
+   font-weight: 600;
+}
+
+.album {
+    width: 90%;
+    height: auto;
+    padding: 0px;
+    margin-left: 5%;;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: flex-end;
+    transition: all 0.35s ease-in-out;
+}
+
+
+.album:hover, #sobre:hover {
+    background-color: rgb(233, 233, 233);
+    
+}
+.gallery {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+.link{
+    width: 50%;
+    margin-right:0px ;
+}
+.titulo {
+    font-weight: 600;
+    color: rgb(75, 75, 75);
+    letter-spacing: 1px;
+}
+
+/*Css da pg sobre*/
+#projetos-sobre {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+}
+#sobre {
+    width: 90%;
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.gallery-sobre {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 1%;
+
+}
+.gallery-sobre p{
+   margin-left: 20px;
+}
+.background {
+    width: 50%;
+    background-color: rgb(224, 224, 224);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.perfil {
+    border: 4px solid white;
+    border-radius: 150px;
+    height: 280px;
+    width: 280px;
+    margin: 0px;
+    
+
+}
+.perfil:hover {
+    height: 285px;
+    width:285px;
+    transition: ease-in-out 0.35s;
+}
+.back {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.back button {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    transition: all 0.35s ease-in-out;
+}
+.back button:hover {
+    border: 2px solid red;
+    font-size: 16px;
+    border-radius: 12px;
+    color: red;
+    cursor: pointer;
+   
+}
+
+.active{
+    color: red;
+    font-size: 17px;
+    font-weight: 300px;
+}
+
+@media (max-width: 850px) {
+    body {
+        text-align: center;
+        display: flex;
+         flex-direction: column;
+         justify-content: center;
+    }
+    header {
+        margin: 0px;
+    }
+    #presentation, #presentation p {
+        margin: 0px;
+        margin-bottom: 20px;
+
+         }
+    
+    .album, #sobre {
+        margin: 0px;
+        margin-bottom: 10px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #sobre {
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .gallery-sobre {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+    
+    }
+    .gallery-sobre p{
+        margin: 0px;
+    }
+
+    .link, .gallery-show, .background{
+        width: 100%;
+     
+        display: block;
+        
+    }
+    ul {
+        margin: 0px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    #nome {
+        margin: 0px;
+    }
+   
+    li {
+        position: relative;
+        right: 5%;
+        margin: 10px;
+    }
+    #nome{
+        margin: 0px;
+    }
+    
+}
+
+@media (max-width: 450px) {
+    
+}
